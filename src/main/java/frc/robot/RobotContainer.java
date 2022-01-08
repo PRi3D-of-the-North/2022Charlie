@@ -10,25 +10,25 @@ import frc.robot.subsystems.Drivetrain;
 import frc.robot.subsystems.DrivetrainShifting;
 
 public class RobotContainer {
-  private final XboxController mXbox = new XboxController(0);
-  private final Joystick mJoystick = new Joystick(1);
-  private final Drivetrain mDrivetrain = new Drivetrain();
-  private final DrivetrainShifting mDrivetrainShifting = new DrivetrainShifting();
+    private final XboxController mXbox = new XboxController(0);
+	private final Joystick mJoystick = new Joystick(1);
+	private final Drivetrain mDrivetrain = new Drivetrain();
+	private final DrivetrainShifting mDrivetrainShifting = new DrivetrainShifting();
 
-  public RobotContainer() {
-    mDrivetrain.setDefaultCommand(new DrivetrainArcadeDrive(mDrivetrain, mXbox));
-    mDrivetrainShifting.setDefaultCommand(new DrivetrainShiftingSetState(mDrivetrainShifting, true));
+	public RobotContainer() {
+		mDrivetrain.setDefaultCommand(new DrivetrainArcadeDrive(mDrivetrain, mXbox));
+		mDrivetrainShifting.setDefaultCommand(new DrivetrainShiftingSetState(mDrivetrainShifting, true));
 
-    configureButtonBindings();
-  }
+		configureButtonBindings();
+	}
 
-  private void configureButtonBindings() {
-    JoystickButton xButtonA, xButtonB, xButtonX, xButtonY, xButtonLeftBumper, xButtonRightBumper, 
-      xButtonLeftStick, xButtonRightStick;
-		JoystickButton jButton1, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8, 
-      jButton9, jButton10, jButton11, jButton12;
+	private void configureButtonBindings() {
+		JoystickButton xButtonA, xButtonB, xButtonX, xButtonY, xButtonLeftBumper, xButtonRightBumper,
+				xButtonLeftStick, xButtonRightStick;
+		JoystickButton jButton1, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8,
+				jButton9, jButton10, jButton11, jButton12;
 
-    xButtonA = new JoystickButton(mXbox, 1);
+		xButtonA = new JoystickButton(mXbox, 1);
 		xButtonB = new JoystickButton(mXbox, 2);
 		xButtonX = new JoystickButton(mXbox, 3);
 		xButtonY = new JoystickButton(mXbox, 4);
@@ -50,11 +50,11 @@ public class RobotContainer {
 		jButton11 = new JoystickButton(mJoystick, 11);
 		jButton12 = new JoystickButton(mJoystick, 12);
 
-    xButtonA.whenPressed(new DrivetrainShiftingSetState(mDrivetrainShifting, false));
+		xButtonA.whenPressed(new DrivetrainShiftingSetState(mDrivetrainShifting, false));
 		xButtonB.whenPressed(new DrivetrainShiftingSetState(mDrivetrainShifting, true));
-  }
+	}
 
-  public Command getAutonomousCommand() {
-    return null;
-  }
+	public Command getAutonomousCommand() {
+		return null;
+	}
 }
