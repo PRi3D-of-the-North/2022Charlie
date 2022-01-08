@@ -24,3 +24,5 @@ hs_err_pid*
 build/jni/release/wpimath.pdb
 *.lock
 *.bin
+*.bin
+*.lock

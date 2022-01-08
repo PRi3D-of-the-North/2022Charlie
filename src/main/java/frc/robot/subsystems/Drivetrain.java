@@ -33,10 +33,10 @@ public class Drivetrain extends SubsystemBase {
         mRightMotor2.follow(mRightMotor1);
         mRightMotor3.follow(mRightMotor1);
 
-        mLeftMotor1.setInverted(false);
+        mLeftMotor1.setInverted(true);
         mLeftMotor2.setInverted(InvertType.FollowMaster);
         mLeftMotor3.setInverted(InvertType.FollowMaster);
-        mRightMotor1.setInverted(true);
+        mRightMotor1.setInverted(false);
         mRightMotor2.setInverted(InvertType.FollowMaster);
         mRightMotor3.setInverted(InvertType.FollowMaster);
     
