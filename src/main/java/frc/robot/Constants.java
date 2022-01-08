@@ -8,7 +8,6 @@ public final class Constants {
                             DRIVETRAIN_RIGHT_MOTOR_2 = 5,
                             DRIVETRAIN_RIGHT_MOTOR_3 = 6;
 
-    public static final int PH = 2,                                   // Pneumatics Hub
-                            DRIVETRAIN_SHIFTING_SOLENOID_FORWARD = 0,
+    public static final int DRIVETRAIN_SHIFTING_SOLENOID_FORWARD = 0, // Pneumatics Hub
                             DRIVETRAIN_SHIFTING_SOLENOID_REVERSE = 1;
 }
