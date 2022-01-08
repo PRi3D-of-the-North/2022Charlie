@@ -11,7 +11,7 @@ import frc.robot.subsystems.DrivetrainShifting;
 
 public class RobotContainer {
   private final XboxController mXbox = new XboxController(0);
-	private final Joystick mJoystick = new Joystick(1);
+  private final Joystick mJoystick = new Joystick(1);
   private final Drivetrain mDrivetrain = new Drivetrain();
   private final DrivetrainShifting mDrivetrainShifting = new DrivetrainShifting();
 
