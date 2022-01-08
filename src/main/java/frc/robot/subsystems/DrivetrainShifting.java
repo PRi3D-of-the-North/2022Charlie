@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
 public class DrivetrainShifting extends SubsystemBase {
-  private final DoubleSolenoid mPistons = new DoubleSolenoid(Constants.PH, PneumaticsModuleType.REVPH, 
+  private final DoubleSolenoid mPistons = new DoubleSolenoid(PneumaticsModuleType.REVPH, 
     Constants.DRIVETRAIN_SHIFTING_SOLENOID_FORWARD, Constants.DRIVETRAIN_SHIFTING_SOLENOID_REVERSE);
   
   public DrivetrainShifting() {
