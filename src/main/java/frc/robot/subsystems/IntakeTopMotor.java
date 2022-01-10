@@ -12,7 +12,7 @@ public class IntakeTopMotor extends SubsystemBase {
 
     public IntakeTopMotor() {
         mMotor.restoreFactoryDefaults();
-        mMotor.setInverted(false);
+        mMotor.setInverted(true);
         mMotor.setIdleMode(IdleMode.kBrake);
         mMotor.burnFlash();
     }

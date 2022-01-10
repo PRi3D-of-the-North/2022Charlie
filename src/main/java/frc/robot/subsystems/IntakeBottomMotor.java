@@ -12,7 +12,7 @@ public class IntakeBottomMotor extends SubsystemBase {
     public IntakeBottomMotor() {
         mMotor.configFactoryDefault();
         mMotor.setInverted(true);
-        mMotor.setNeutralMode(NeutralMode.Coast);
+        mMotor.setNeutralMode(NeutralMode.Brake);
     }
 
     @Override
